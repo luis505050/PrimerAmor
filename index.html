@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Ti 💖</title>
-    <link rel="icon" href="img/avicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <canvas id="canvas"></canvas>
     <div class="contenido">
         <h1>Para la persona que alegra mi vida</h1>
         <p>Desde que llegaste, todo es más bonito. Te amo 💘</p>
-        <button id="musicaBtn">🎵 Escuchar canción</button>
-    </div> <br><br> <br> <br> <br><br> <br><br><br><br><br><br><br>
-    
-
-    <audio id="musica" src="miPrimerAmor.mp3"></audio>
-    <script src="script.js"></script>
+        <button id="musicaBtn">🎵 Escuchar canción</button>        
+        <audio id="musica" src="miPrimerAmor.mp3"></audio> <br> <br> <br>
+        <!-- agregamos el controladotr del volumen -->
+        <label for="volumen">Volumen:</label>
+        <input type="range" id="volumen" min="0" max="1" step="0.1" value="1"> 
+        <span id="volumenValor">100%</span>
+        <!--  -->
+        <script src="script.js"></script>
 </body>
 
 </html>
